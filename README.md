@@ -65,7 +65,7 @@ grandChild.addEventListener('click',(e)=>{
 },true)   // The 'true' argument enables capturing
 ```
 
-### How JavaScript handles Asynchronous task
+### 2. How JavaScript handles Asynchronous task
 
 In JavaScript, the call stack and the event loop are crucial components that manage the execution of code, especially in asynchronous operations.
 
