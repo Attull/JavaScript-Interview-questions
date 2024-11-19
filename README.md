@@ -107,3 +107,25 @@ It will throw a ReferenceError
 #### Why is TDZ important?
 * Prevents accidental variable usage
 * Improves code clarity:
+
+### Currying
+
+Currying is a functional programming technique where a function with multiple arguments is transformed into a series of functions, each taking a single argument.
+
+```js
+// your normal function
+const add = (a, b) => {
+  return a + b;
+}
+
+console.log(add(1,2)); // 3
+
+// using currying
+const add = (a) => {
+  return (b) => {
+    return a + b;
+  }
+}
+
+console.log(add(1)(2)); // 3
+```
