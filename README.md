@@ -93,3 +93,17 @@ When an asynchronous operation completes, its associated callback function is ad
 #### Event Loop:
 The event loop continuously monitors the call stack. If the call stack is empty, it checks the task queue. If there are tasks in the queue, the event loop takes the first task and pushes it onto the call stack for execution.
 
+### var, let & const
+
+#### Hoisting
+
+Hoisting refers to the process where JavaScript moves declarations to the top of their respective scope
+
+#### Temporal Dead Zone
+
+The Temporal Dead Zone (TDZ) is a concept in JavaScript that refers to a specific period during the execution of a program where a variable exists but cannot be accessed. This period occurs between the start of a scope (function or block) and the point where the variable is declared using the `let` or `const` keywords. 
+It will throw a ReferenceError
+
+#### Why is TDZ important?
+* Prevents accidental variable usage
+* Improves code clarity:
