@@ -93,7 +93,7 @@ When an asynchronous operation completes, its associated callback function is ad
 #### Event Loop:
 The event loop continuously monitors the call stack. If the call stack is empty, it checks the task queue. If there are tasks in the queue, the event loop takes the first task and pushes it onto the call stack for execution.
 
-### var, let & const
+### 3. var, let & const
 
 #### Hoisting
 
@@ -108,7 +108,7 @@ It will throw a ReferenceError
 * Prevents accidental variable usage
 * Improves code clarity:
 
-### Currying
+### 4. Currying
 
 Currying is a functional programming technique where a function with multiple arguments is transformed into a series of functions, each taking a single argument.
 
@@ -129,7 +129,7 @@ const add = (a) => {
 
 console.log(add(1)(2)); // 3
 ```
-## JavaScript Event Loop
+### 5. JavaScript Event Loop
  Single-Threaded Execution:
  - JavaScript is single-threaded, which means it can only execute one task at a time. This is managed by the call stack, where functions are executed one by one.
 
@@ -151,7 +151,7 @@ console.log(add(1)(2)); // 3
  Priority Handling:
  - To sum it up, the event loop first checks the microtasks queue. If it's empty, it moves to the callback queue. This ensures that critical tasks, like promises, are handled promptly.
 
-## Explain Asynchronous Operations in JavaScript
+### 6. Explain Asynchronous Operations in JavaScript
 
 JavaScript is a powerful language used to build dynamic web pages and applications. One of its key features is the ability to handle asynchronous operations. But what does that mean?
 
@@ -170,13 +170,13 @@ JavaScript handles asynchronous operations mainly through three methods:
 2. 𝗣𝗿𝗼𝗺𝗶𝘀𝗲𝘀: Promises provide a cleaner way to handle asynchronous code. A promise represents a value that may be available now, or in the future, or never. You can use .then() to specify what should happen when the promise is fulfilled, and .catch() to handle errors.
 3. 𝗔𝘀𝘆𝗻𝗰/𝗔𝘄𝗮𝗶𝘁: This is a newer and more readable way to write asynchronous code. Using async before a function means it will always return a promise. await can be used inside async functions to pause the execution until the promise is resolved.
 
-## W𝐡𝐚𝐭 𝐢𝐬 𝐬𝐡𝐚𝐥𝐥𝐨𝐰 𝐜𝐨𝐩𝐲 𝐚𝐧𝐝 𝐝𝐞𝐞𝐩 𝐜𝐨𝐩𝐲?
+### 7. W𝐡𝐚𝐭 𝐢𝐬 𝐬𝐡𝐚𝐥𝐥𝐨𝐰 𝐜𝐨𝐩𝐲 𝐚𝐧𝐝 𝐝𝐞𝐞𝐩 𝐜𝐨𝐩𝐲?
 
 𝐒𝐡𝐚𝐥𝐥𝐨𝐰 𝐂𝐨𝐩𝐲: A shallow copy duplicates the immediate values of an object or array. However, if the original contains nested objects or arrays, the references to these nested elements are copied, not the objects themselves. This means changes to nested objects in the copied version will affect the original.
 
 𝐃𝐞𝐞𝐩 𝐂𝐨𝐩𝐲: A deep copy duplicates all levels of an object or array, creating entirely independent copies of all nested objects and arrays. Changes in the deep copy do not affect the original.
 
-## Currying
+### 8. Currying
 
 Currying is a technique where a function takes one argument at a time, returning another function to handle the next argument, and so on, until all arguments are provided. This makes functions more reusable and flexible.
 
